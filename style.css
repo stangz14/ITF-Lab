@@ -82,7 +82,9 @@ nav ul li a:hover {
 }
 
 .btn {
+    cursor: pointer;
     outline: none;
+    border: none;
     position: relative;
     display: inline-block;
     font-size: 1.25em;
