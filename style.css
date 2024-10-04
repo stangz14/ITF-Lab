@@ -5,7 +5,7 @@
     scroll-behavior: smooth;
 }
 
-header {
+nav {
     position: fixed;
     top: 0;
     left: 0;
@@ -18,7 +18,7 @@ header {
     backdrop-filter: blur(20px);
 }
 
-header .logo {
+nav .logo {
     position: relative;
     color: #fff;
     text-decoration: none;
@@ -26,25 +26,25 @@ header .logo {
     font-size: 2em;
 }
 
-header ul {
+nav ul {
     position: relative;
     display: flex;
     gap: 40px;
 }
 
-header ul li {
+nav ul li {
     list-style: none;
 }
 
-header ul li a {
+nav ul li a {
     text-decoration: none;
     color: #fff;
     font-weight: 500;
     font-size: 1.25em;
 }
 
-header ul li.active a,
-header ul li a:hover {
+nav ul li.active a,
+nav ul li a:hover {
     color: #30fe6c;
 }
 
@@ -82,6 +82,7 @@ header ul li a:hover {
 }
 
 .btn {
+    outline: none;
     position: relative;
     display: inline-block;
     font-size: 1.25em;
@@ -249,7 +250,7 @@ footer{
 }
 
 @media (max-width: 900px) {
-    header{
+    nav{
         padding: 20px 50px;
     }
     #home{
@@ -316,18 +317,18 @@ footer{
         transform: translateY(10px);
         transition: 0.5s;
     }
-    header.active .menuToggle::before{
+    nav.active .menuToggle::before{
         transform: translateY(0px) rotate(45deg);
         box-shadow: 0 0 #fff;
     }
-    header.active .menuToggle::after{
+    nav.active .menuToggle::after{
         transform: translateY(0px) rotate(315deg);
         box-shadow: 0 0 #fff;
     }
-    header ul {
+    nav ul {
         display: none;
     }
-    header.active ul {
+    nav.active ul {
         position: fixed;
         left: 0%;
         top: 77px;
@@ -341,7 +342,7 @@ footer{
         z-index: 10000;
         gap: 20px;
     }
-    header.active ul li a{
+    nav.active ul li a{
         font-size: 2em;
     }
 
